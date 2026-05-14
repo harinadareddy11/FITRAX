@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏋️ FitRax
+# 🏋️ FITRAX
 
 ### Your Private Gym Companion — Built for Indian Gym-Goers
 
