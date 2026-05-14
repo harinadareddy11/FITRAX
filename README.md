@@ -271,7 +271,7 @@ fitrax/
 ## 👨‍💻 Author
 
 **Your Name**
-🔗 GitHub: [yourusername](https://github.com/yourusername)
+🔗 GitHub: [harinadareddy11](https://github.com/harinadareddy11)
 
 ---
 
