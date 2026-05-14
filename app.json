@@ -1,29 +1,57 @@
 {
   "expo": {
-    "name": "fitrax",
+    "name": "FitRax",
     "slug": "fitrax",
     "version": "1.0.0",
+    "backgroundColor": "#0D0D0D",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
-      "image": "./assets/splash-icon.png",
+      "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#0D0D0D"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "bundleIdentifier": "com.fitrax.app"
     },
     "android": {
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
-        "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
-        "monochromeImage": "./assets/android-icon-monochrome.png"
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0D0D0D"
+      },
+      "package": "com.fitrax.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.CAMERA",
+        "android.permission.VIBRATE",
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT",
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "FitRax needs photo access to let you select existing progress photos.",
+          "cameraPermission": "FitRax needs camera access to take your progress photos."
+        }
+      ],
+      "expo-system-ui",
+      "expo-secure-store",
+      "expo-local-authentication",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7a8bea70-c036-4da9-a3d1-7e11b619c56c"
       }
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    }
+    "owner": "harinadareddy"
   }
 }
